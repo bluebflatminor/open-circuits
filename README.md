@@ -14,7 +14,9 @@ The synthesis, stated plainly at Node 11:
 
 The thread running through human affairs is not a value. It is *conductivity* — a valence-free amplification machinery. Culture is downstream of it; every fracture, sect, and polarization is the machinery running normally. The practical conclusion is therefore not "fix human nature" but "maintain the wiring": the institutions, norms, and algorithms that determine whether the current feeds a self-sustaining chain reaction (othering, revenge, polarization) or a self-terminating control rod (forgiveness, law, circle expansion).
 
-Written to be accessible to a general reader in their twenties. No prior background assumed; ~15 minute read.
+Written to be accessible to a general reader in their twenties. No prior background assumed; ~17 minute read.
+
+A closing appendix, **Test bench**, states the framework's predictions explicitly and runs them against cases the essay wasn't built from — Buddhism (independent replication of the doctrine-plus-power pattern), the Sunni–Shia split (focal-point succession plus grievance-charter martyrdom), Confucianism (a wiring manual rather than a competitor), the China–Dalai Lama standoff (dominance attempting to capture prestige machinery), a pacifist control group whose lack of state power keeps the central prediction honestly untested, Ashoka as the nearest recorded falsifier, and Marxism-Leninism as demonstration that the operative variable is power access, not theism.
 
 ## Structure
 
@@ -34,6 +36,7 @@ Twelve nodes on a signal path, each answering a question raised by the one befor
 | 10 · Loop dynamics | Revenge, forgiveness, and the martyr problem |
 | 11 · The thread | Is there a name for all this? (with synthesis schematic) |
 | 12 · Output | You don't choose the current. You build the wiring. |
+| Appendix · Test bench | Does the framework survive contact? (stated predictions, independent replications, control group, nearest falsifier) |
 
 ## Design
 
