@@ -235,6 +235,107 @@
   .dg-t.acc{fill:var(--accent);}
   .dg-s{font-family:'Instrument Sans', sans-serif; font-size:11.5px; fill:var(--ink-soft);}
 
+  /* interactive bench */
+  .bench{
+    border:1.5px dashed var(--rule);
+    border-radius:.6rem;
+    padding:1.3rem 1.3rem 1.4rem;
+    margin-top:1.8rem;
+    max-width:40rem;
+  }
+  .bench-step{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.68rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    display:block;
+    margin:1.15rem 0 .45rem;
+  }
+  .bench-step:first-child{margin-top:0;}
+  .bench input[type="text"]{
+    width:100%;
+    background:var(--bg-deep);
+    border:1px solid var(--rule);
+    border-radius:.45rem;
+    padding:.55rem .75rem;
+    color:var(--ink);
+    font-family:'Instrument Sans', sans-serif;
+    font-size:.95rem;
+  }
+  .bench input[type="text"]:focus{outline:2px solid var(--signal); outline-offset:1px;}
+  .chips{display:flex; flex-wrap:wrap; gap:.45rem;}
+  .chip{
+    font-family:'Instrument Sans', sans-serif;
+    font-size:.85rem;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--bg-deep);
+    border:1px solid var(--rule);
+    border-radius:999px;
+    padding:.4rem .85rem;
+    cursor:pointer;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .chip[aria-pressed="true"]{
+    background:var(--accent-soft);
+    border-color:var(--accent);
+    color:var(--ink);
+  }
+  .chip:hover{border-color:var(--accent);}
+  .bench-derived{
+    font-size:.94rem;
+    color:var(--ink-soft);
+    background:var(--bg-deep);
+    border-left:3px solid var(--signal);
+    border-radius:0 .45rem .45rem 0;
+    padding:.65rem .9rem;
+    margin-top:.5rem;
+    min-height:2.4rem;
+  }
+  .bench-card{
+    display:none;
+    margin-top:1.2rem;
+    background:var(--bg-deep);
+    border:1px solid var(--accent);
+    border-radius:.55rem;
+    padding:1rem 1.1rem;
+  }
+  .bench-card.show{display:block;}
+  .bench-card .bin{
+    font-family:'Unbounded', sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    margin-bottom:.4rem;
+  }
+  .bench-card pre{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.74rem;
+    line-height:1.55;
+    white-space:pre-wrap;
+    color:var(--ink-soft);
+    margin:.5rem 0 .8rem;
+  }
+  .bench-actions{display:flex; gap:.6rem; flex-wrap:wrap;}
+  .bench-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.72rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    background:var(--accent);
+    color:var(--bg);
+    border:none;
+    border-radius:.45rem;
+    padding:.55rem 1rem;
+    cursor:pointer;
+  }
+  .bench-btn.ghost{
+    background:transparent;
+    color:var(--ink);
+    border:1px solid var(--rule);
+  }
+  .bench-btn:hover{opacity:.88;}
+
   /* closing */
   .coda{
     margin-top:3rem;
@@ -431,7 +532,54 @@
     <h2>Does the framework survive contact?</h2>
     <p>A pattern you can't test is just a story. So here's the guide run against cases it wasn't built from — with its predictions stated first. Prediction one: any boundary-dissolving creed that gains state power will redraw boundaries, regardless of its content. Prediction two: a martyr's death carries no meaning of its own; the caption the survivors attach decides everything. Prediction three: when prestige and dominance collide, dominance will try to capture the prestige machinery rather than beat it.</p>
     <p><strong>Buddhism</strong> is the strongest replication. Its core doctrine is practically Node 10 in Sanskrit — samsara is a self-sustaining loop, nirvana literally means <em>extinguishing</em>: chain-reaction exit elevated to a metaphysics. And yet: Buddhist monks led the anti-Rohingya movement in Myanmar, Buddhist nationalism fueled Sri Lanka's civil war, and Japanese Zen institutions blessed imperial militarism. Fused with ethnic identity and state power, the loop-exit creed redrew the boundary — a second, fully independent confirmation of the pattern Christianity showed first. <strong>The Sunni–Shia split</strong> confirms two more nodes at once: it began as a pure focal-point succession crisis (consensus versus bloodline), and its emotional engine — Husayn's death at Karbala, ritually recommemorated for thirteen centuries — is the grievance-charter martyrdom in textbook form. Yet for most of history the two communities coexisted and intermarried; the modern lethality is amplifier-driven, old wire, new current. <strong>China versus the Dalai Lama</strong> is prediction three running live: a dominance state, unable to defeat a stateless prestige leader, now claims the legal right to approve his <em>reincarnation</em> — an atheist regime seizing the focal-point-generating machinery itself.</p>
-    <p><strong>Confucianism</strong> doesn't fit the pattern — because it never played the game. It isn't a boundary-attack creed; it's a wiring manual that conceded this guide's conclusion up front: don't fix the substrate, channel it through ritual, role, and relationship. And the <strong>control group</strong> — Jains, Quakers, Baha'i, Anabaptists — never became persecutors, but never held state power either, so the dark prediction stays untested by them; the nearest falsifier on record is Ashoka, the emperor who adopted the control rod <em>after</em> atrocity and mostly held it. One data point, much debated. Finally, <strong>Marxism-Leninism</strong> — eschatology, martyrs, heretics, inquisitions, the full Christendom pattern reproduced in a single generation by an explicitly godless doctrine — settles the last question: the variable was never God. It was always the switch. The bench is open; run your own cases.</p>
+    <p><strong>Confucianism</strong> doesn't fit the pattern — because it never played the game. It isn't a boundary-attack creed; it's a wiring manual that conceded this guide's conclusion up front: don't fix the substrate, channel it through ritual, role, and relationship. And the <strong>control group</strong> — Jains, Quakers, Baha'i, Anabaptists — never became persecutors, but never held state power either, so the dark prediction stays untested by them; the nearest falsifier on record is Ashoka, the emperor who adopted the control rod <em>after</em> atrocity and mostly held it. One data point, much debated. Finally, <strong>Marxism-Leninism</strong> — eschatology, martyrs, heretics, inquisitions, the full Christendom pattern reproduced in a single generation by an explicitly godless doctrine — settles the last question: the variable was never God. It was always the switch.</p>
+
+    <div class="bench" id="bench">
+      <span class="bench-step">Step 1 · Name your case</span>
+      <input type="text" id="bCase" placeholder="e.g. Sikhism, Mormonism, the French Revolution…" aria-label="Case name">
+
+      <span class="bench-step">Step 2 · Boundary stance — what does the creed do to the us/them line?</span>
+      <div class="chips" role="group" aria-label="Boundary stance">
+        <button class="chip" data-g="boundary" data-v="dissolving">Dissolves it</button>
+        <button class="chip" data-g="boundary" data-v="drawing">Draws it natively</button>
+        <button class="chip" data-g="boundary" data-v="agnostic">Neither — it's a wiring manual</button>
+      </div>
+
+      <span class="bench-step">Step 3 · Power access — did it ever run a state?</span>
+      <div class="chips" role="group" aria-label="Power access">
+        <button class="chip" data-g="power" data-v="none">Never held state power</button>
+        <button class="chip" data-g="power" data-v="state">Held state power</button>
+        <button class="chip" data-g="power" data-v="transition">Transitioned prestige → dominance</button>
+      </div>
+
+      <span class="bench-step">Step 4 · Martyr caption — how are its martyrs remembered?</span>
+      <div class="chips" role="group" aria-label="Martyr caption">
+        <button class="chip" data-g="martyr" data-v="forgive">Forgive</button>
+        <button class="chip" data-g="martyr" data-v="avenge">Avenge</button>
+        <button class="chip" data-g="martyr" data-v="defend">Defend</button>
+        <button class="chip" data-g="martyr" data-v="none">No martyr tradition</button>
+      </div>
+
+      <div class="bench-derived" id="bDerived" aria-live="polite">Make your selections — the framework's prediction appears here before you check the record. That order is the discipline.</div>
+
+      <div id="bRecordWrap" style="display:none">
+        <span class="bench-step">Step 5 · Now — and only now — check the record. What actually happened?</span>
+        <div class="chips" role="group" aria-label="Historical record">
+          <button class="chip" data-g="record" data-v="appeared">Pattern appeared</button>
+          <button class="chip" data-g="record" data-v="absent">Pattern did not appear</button>
+          <button class="chip" data-g="record" data-v="mixed">Mixed / contested</button>
+        </div>
+      </div>
+
+      <div class="bench-card" id="bCard">
+        <div class="bin" id="bBin"></div>
+        <pre id="bSummary"></pre>
+        <div class="bench-actions">
+          <button class="bench-btn" id="bCopy">Copy bench card</button>
+          <button class="bench-btn ghost" id="bReset">Reset</button>
+        </div>
+      </div>
+    </div>
   </section>
 
 </div>
@@ -463,6 +611,100 @@
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('lit'); });
   }, { rootMargin: '0px 0px -55% 0px' });
   sections.forEach(s => io.observe(s));
+
+  // ---- The test bench (all in-memory, nothing stored) ----
+  const state = { boundary:null, power:null, martyr:null, record:null };
+  const derived = document.getElementById('bDerived');
+  const recordWrap = document.getElementById('bRecordWrap');
+  const card = document.getElementById('bCard');
+  const binEl = document.getElementById('bBin');
+  const sumEl = document.getElementById('bSummary');
+
+  const captionNote = {
+    forgive:'Martyr caption: FORGIVE — wired to the control rod.',
+    avenge:'Martyr caption: AVENGE — wired to the chain reaction.',
+    defend:'Martyr caption: DEFEND — a third caption the guide\'s bins don\'t yet cover. Noted as a framework gap.',
+    none:'No martyr tradition — prediction two not exercised.'
+  };
+
+  function predictionFor(){
+    if(!state.boundary || !state.power) return null;
+    if(state.boundary === 'agnostic')
+      return {test:false, text:'Prediction: OUT OF SCOPE likely — a wiring manual isn\'t a boundary creed, so predictions 1–2 don\'t apply. The record check is optional context.'};
+    if(state.power === 'none')
+      return {test:false, text:'Prediction: UNTESTABLE — without state power, prediction 1 was never run. A clean record here is a confound, not a confirmation.'};
+    if(state.boundary === 'dissolving')
+      return {test:true, text:'Prediction: BOUNDARY REASSERTION expected — a boundary-dissolving creed with power access should redraw the line, regardless of doctrine. Now check the record.'};
+    return {test:true, text:'Prediction: STANDARD IN-GROUP DYNAMICS — the creed draws boundaries natively, so the interesting test is the martyr caption and what power amplified. Check the record.'};
+  }
+
+  function binFor(){
+    const p = predictionFor();
+    if(!p) return null;
+    if(state.boundary === 'agnostic') return {bin:'OUT OF SCOPE', note:'The framework declines this case — which is a feature. A framework that explains everything explains nothing.'};
+    if(state.power === 'none') return {bin:'UNTESTABLE (CONFOUNDED)', note:'Filed honestly: the variable was never tested. This case neither confirms nor threatens the framework.'};
+    if(!state.record) return null;
+    if(state.boundary === 'dissolving'){
+      if(state.record === 'appeared') return {bin:'REPLICATION', note:'The pattern reproduced out-of-sample. One more independent confirmation.'};
+      if(state.record === 'absent') return {bin:'FALSIFIER CANDIDATE', note:'Creed + power, and the boundary held? This is the interesting bin. Before celebrating or panicking: check duration, scale, and whether an escape clause is doing hidden work.'};
+      return {bin:'PARTIAL / CONTESTED', note:'Ashoka\'s bin. Log it, argue about it, don\'t round it in either direction.'};
+    }
+    if(state.record === 'appeared') return {bin:'CONSISTENT', note:'In-group dynamics as expected — low information, since the creed predicted its own boundary.'};
+    if(state.record === 'absent') return {bin:'ANOMALY', note:'A boundary-drawing creed that didn\'t produce in-group dynamics under power would be genuinely strange. Re-check the decomposition.'};
+    return {bin:'PARTIAL / CONTESTED', note:'Mixed record on a native-boundary creed. Note it and move on.'};
+  }
+
+  function render(){
+    const p = predictionFor();
+    if(p){
+      let t = p.text;
+      if(state.martyr) t += ' ' + captionNote[state.martyr];
+      derived.textContent = t;
+      recordWrap.style.display = p.test ? 'block' : 'none';
+    } else {
+      derived.textContent = 'Make your selections — the framework\'s prediction appears here before you check the record. That order is the discipline.';
+      recordWrap.style.display = 'none';
+    }
+    const b = binFor();
+    if(b){
+      const name = document.getElementById('bCase').value.trim() || '(unnamed case)';
+      binEl.textContent = b.bin;
+      sumEl.textContent =
+        'OPEN CIRCUITS · BENCH CARD\n' +
+        'case:      ' + name + '\n' +
+        'boundary:  ' + state.boundary + '\n' +
+        'power:     ' + state.power + '\n' +
+        'martyrs:   ' + (state.martyr || 'unset') + '\n' +
+        'record:    ' + (state.record || 'n/a') + '\n' +
+        'bin:       ' + b.bin + '\n' +
+        'note:      ' + b.note;
+      card.classList.add('show');
+    } else {
+      card.classList.remove('show');
+    }
+  }
+
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.setAttribute('aria-pressed','false');
+    chip.addEventListener('click', () => {
+      const g = chip.dataset.g;
+      state[g] = chip.dataset.v;
+      document.querySelectorAll('.chip[data-g="'+g+'"]').forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
+      if(g !== 'record') { state.record = null; document.querySelectorAll('.chip[data-g="record"]').forEach(c => c.setAttribute('aria-pressed','false')); }
+      render();
+    });
+  });
+  document.getElementById('bCase').addEventListener('input', render);
+  document.getElementById('bCopy').addEventListener('click', async () => {
+    try{ await navigator.clipboard.writeText(sumEl.textContent); document.getElementById('bCopy').textContent = 'Copied'; setTimeout(()=>{document.getElementById('bCopy').textContent='Copy bench card';},1500); }
+    catch(e){ /* clipboard unavailable — card text remains selectable */ }
+  });
+  document.getElementById('bReset').addEventListener('click', () => {
+    state.boundary = state.power = state.martyr = state.record = null;
+    document.getElementById('bCase').value = '';
+    document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
+    render();
+  });
 </script>
 
 </body>
