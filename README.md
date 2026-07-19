@@ -45,6 +45,7 @@ Single self-contained HTML file, no build step, no dependencies beyond Google Fo
 - The visual conceit is a circuit schematic: a copper/live-wire rail runs the left margin, and each node lights as the reader passes it (IntersectionObserver).
 - Dark and light themes; defaults to system preference with a manual toggle. Theme choice is session-only by design (no cookies, no storage).
 - Node 11 contains an SVG synthesis schematic rendering the entire argument as one signal path: current → substrate → amplifiers → a switch (the wiring) → two output loops.
+- The Test bench appendix is interactive: readers name a case, decompose it (boundary stance, power access, martyr caption), receive the framework's prediction *before* being allowed to check the historical record — the ordering is enforced deliberately — and get a scored "bench card" (Replication / Out of scope / Untestable / Falsifier candidate / Partial) they can copy. All in-memory; nothing is stored or transmitted. Selecting the "Defend" martyr caption is flagged as a known gap in the framework's bins.
 - Type: Unbounded (display), Instrument Sans (body), IBM Plex Mono (schematic annotation).
 - Responsive to mobile; respects `prefers-reduced-motion`; visible keyboard focus.
 
