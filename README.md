@@ -6,7 +6,7 @@ Live: `https://bluebflatminor.github.io/open-circuits/`
 
 ## What this is
 
-A single-page essay distilling one long dialogue into twelve connected sections ("nodes"). It starts with a question about machine awareness — could an AI with unlimited surveillance feeds, persistent memory, and an adaptive algorithm become more aware than an ordinary model? — and follows that question wherever it leads: China's surveillance state, values encoded in AI training, American polarization, in-group psychology, leadership, Gandhi and Hitler as a controlled experiment, Viking law and the Nordic welfare state, the ethical program of Christianity, revenge and forgiveness as opposite loop dynamics, and martyrdom as the dual-use hinge between them.
+A single-page essay distilling one long dialogue into twelve connected sections ("nodes"), plus a coda node added in v1.1. It starts with a question about machine awareness — could an AI with unlimited surveillance feeds, persistent memory, and an adaptive algorithm become more aware than an ordinary model? — and follows that question wherever it leads: China's surveillance state, values encoded in AI training, American polarization, in-group psychology, leadership, Gandhi and Hitler as a controlled experiment, Viking law and the Nordic welfare state, the ethical program of Christianity, revenge and forgiveness as opposite loop dynamics, and martyrdom as the dual-use hinge between them.
 
 The synthesis, stated plainly at Node 11:
 
@@ -14,13 +14,15 @@ The synthesis, stated plainly at Node 11:
 
 The thread running through human affairs is not a value. It is *conductivity* — a valence-free amplification machinery. Culture is downstream of it; every fracture, sect, and polarization is the machinery running normally. The practical conclusion is therefore not "fix human nature" but "maintain the wiring": the institutions, norms, and algorithms that determine whether the current feeds a self-sustaining chain reaction (othering, revenge, polarization) or a self-terminating control rod (forgiveness, law, circle expansion).
 
-Written to be accessible to a general reader in their twenties. No prior background assumed; ~17 minute read.
+**Node 13 (added in v1.1)** asks the question the first twelve nodes never did: why does the current flow at all? Conductivity is a theory of transmission, not of motive force — a wire conducts nothing without a potential difference. The node proposes one candidate voltage, explicitly framed as a lens rather than a finding: the standing potential between isolation and belonging. It retells, in original words, the old teaching story of the changed waters — the last sane man who drinks not because he is persuaded but because he is alone, and who, in the dervish telling, forgets his own store of pure water the moment he drinks — and sets it against the unresolved counter-case of the dissident who holds the voltage for a lifetime. The node states its own upgrade condition (a differential prediction that would distinguish belonging-as-substrate from belonging-as-one-current-among-several) and ends on the open question rather than resolving it.
+
+Written to be accessible to a general reader in their twenties. No prior background assumed; ~19 minute read.
 
 A closing appendix, **Test bench**, states the framework's predictions explicitly and runs them against cases the essay wasn't built from — Buddhism (independent replication of the doctrine-plus-power pattern), the Sunni–Shia split (focal-point succession plus grievance-charter martyrdom), Confucianism (a wiring manual rather than a competitor), the China–Dalai Lama standoff (dominance attempting to capture prestige machinery), a pacifist control group whose lack of state power keeps the central prediction honestly untested, Ashoka as the nearest recorded falsifier, and Marxism-Leninism as demonstration that the operative variable is power access, not theism.
 
 ## Structure
 
-Twelve nodes on a signal path, each answering a question raised by the one before:
+Thirteen nodes on a signal path, each answering a question raised by the one before:
 
 | Node | Section |
 |------|---------|
@@ -36,6 +38,7 @@ Twelve nodes on a signal path, each answering a question raised by the one befor
 | 10 · Loop dynamics | Revenge, forgiveness, and the martyr problem |
 | 11 · The thread | Is there a name for all this? (with synthesis schematic) |
 | 12 · Output | You don't choose the current. You build the wiring. |
+| 13 · Potential difference | Why does the current flow at all? (belonging as candidate voltage; the changed-waters parable; the dissident problem — added in v1.1) |
 | Appendix · Test bench | Does the framework survive contact? (stated predictions, independent replications, control group, nearest falsifier) |
 
 ## Design
@@ -53,11 +56,18 @@ Single self-contained HTML file, no build step, no dependencies beyond Google Fo
 
 Rename `open-circuits.html` to `index.html`, push to `main`, and enable GitHub Pages (Settings → Pages → Deploy from branch → `main` / root).
 
+## Revision log
+
+- **v1.1 (July 2026)** — Adds Node 13 · Potential difference: the belonging/isolation potential-difference reading, framed as a lens with a stated upgrade condition; the changed-waters parable retold in original words; the dissident counter-case held open as an unresolved pair. Hero note and read time updated; existing anchor IDs unchanged. Deliberately excluded from this revision: hero-journey/Campbell material and a broader permeability thread, banked for possible separate work to preserve the guide's single-variable discipline.
+- **v1.0 (July 2026)** — Initial publication: twelve nodes plus interactive Test bench appendix.
+
 ## Method and disclosure
 
 This essay was produced in collaboration with AI systems and distilled from a single extended dialogue (July 2026) between the author and Claude (Anthropic). The distillation, prose, and page design were drafted by Claude under the author's direction. An editorial review pass by GPT (OpenAI) contributed one adopted structural suggestion (the Node 11 synthesis diagram, redrawn to correct a topology error in the reviewer's version) and several sentence-level trims; other suggestions were declined and the declinations documented. Consistent with the correlated-instrument discipline used across this account's projects, agreement between AI reviewers was treated as roughly one opinion, not independent confirmation.
 
-Historical and scientific claims are presented at field-guide resolution: they summarize established research (minimal group experiments, negativity bias, moral elevation, the perception gap, the romance of leadership, Norse legal history, the Xinjiang IJOP reporting) without inline citation. Readers should treat specific figures as pointers to the underlying literature, not as verified primary claims.
+Node 13 (v1.1) originated in a subsequent exchange: GPT (OpenAI) proposed reading belonging as the circuit's potential difference; the framing was adopted under adversarial review by Claude with an explicit lens-not-finding constraint and a stated falsifiability condition, and the counter-case (the dissident who does not drink) was deliberately left unresolved rather than absorbed into the thesis. The two source parables — the dervish tale of the changed waters (as recorded in the Sufi teaching-story tradition) and Kahlil Gibran's "The Wise King" (*The Madman*, 1918) — are retold in original words, not quoted, and the retellings were checked against the source texts by the author before deployment.
+
+Historical and scientific claims are presented at field-guide resolution: they summarize established research (minimal group experiments, negativity bias, moral elevation, the perception gap, the romance of leadership, Norse legal history, the Xinjiang IJOP reporting, and — for Node 13 — the social-isolation and mortality literature) without inline citation. Readers should treat specific figures as pointers to the underlying literature, not as verified primary claims.
 
 ## License
 
